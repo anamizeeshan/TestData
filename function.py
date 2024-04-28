@@ -57,3 +57,30 @@
 #       print(i * 2)
 #    return sum(args)
 # print(sum_all(1,2,3))
+#------------------------------------------------------------------------------
+#Q:function with **kwargs:creat a function that accept any number of keyword arguments and print 
+#them in the format key:value 
+# def print_kwagrs(**kwargs):
+#     for key , value in kwargs.items():
+#         print(f"{key}:{value}")
+# print_kwagrs(name="anam",power="lazer")
+# print_kwagrs(name="anam")
+# print_kwagrs(name="anam",Power="lazer",enemy="eggman")
+#------------------------------------------------------------------------------------------------------        
+#Q: generator function with yeild:write a generator function that yeild even numbers up to specified limit.
+# def even_generator(limit):
+#     for i in range(2,limit +1,2):
+#         yield i
+
+# for num in even_generator(10):
+#     print(num)
+#
+#Q:recursive function:creat a recarsive function to calculate the factorial of a  number
+def factorial(n):
+    if n==0:
+        return 1
+       
+    else:
+        return n * factorial(n-1)
+print(factorial(5)) 
+     
