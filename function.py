@@ -76,11 +76,79 @@
 #     print(num)
 #
 #Q:recursive function:creat a recarsive function to calculate the factorial of a  number
-def factorial(n):
-    if n==0:
-        return 1
+# def factorial(n):
+#     if n==0:
+#         return 1
        
-    else:
-        return n * factorial(n-1)
-print(factorial(5)) 
-     
+#     else:
+#         return n * factorial(n-1)
+# print(factorial(5)) 
+#-------------------------------------------------------------------
+#Q:WAF to print the length of a list
+# names=["zeeshanAhmad","anam","ayesha"]
+# cities=["lahore","ialamabad","karachi","Quetta","peshawar"]
+# def length_list(list):
+#     print(len(list))
+
+# length_list(names)
+# length_list(cities)
+#--------------------------------------------------------------
+#Q:WAF to print the element of a list in a single line 
+# element=[1,2,3,4,5,6,7]
+# cities=["lahore","ialamabad","karachi","Quetta","peshawar"]
+
+# def print_line(list):
+#     for item in list:
+#         print(item,end="")
+ 
+# print_line(element)
+# result=0
+# def factorial(n):
+#     if n==0:
+#       return 1
+       
+#     else:
+#         return n * factorial(n-1)   
+# print(factorial(9))    
+
+# def factorial(n):
+#    fact=1
+#    for i in range(1,n+1):
+#        fact*=i
+#        print(fact)
+
+# factorial(5)     
+# def converter(USD_val):
+#     Inr_val=USD_val*83
+#     print(USD_val,"USD =",Inr_val," Inr")
+# converter(7)    
+
+# def check_number(n):
+#     if n%2==0:
+#         print("even")
+#     else:
+#         print("odd")
+# check_number (8)
+# --------------------------------------------------------------
+#Q: find factorial using recursion
+# def fact(n):
+#     if(n==1) or (n==0):
+#         return 1
+#     return fact (n-1)*n
+# print(fact(7))
+# def fact(n):
+#  if (n==0):
+#    return 0
+ 
+#  return fact(n-1) + n
+ 
+# print(fact(5))
+def print_list(list,indx=0):
+    if indx==len(list):
+        return
+    print(list[indx])
+    print_list(list,indx+1)
+
+fruit=["mango","banana","apple","orange"]
+
+print_list(fruit)    
