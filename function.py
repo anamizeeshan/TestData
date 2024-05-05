@@ -143,12 +143,25 @@
 #  return fact(n-1) + n
  
 # print(fact(5))
-def print_list(list,indx=0):
-    if indx==len(list):
-        return
-    print(list[indx])
-    print_list(list,indx+1)
+# def print_list(list,indx=0 ):
+#     if indx==len(list):
+#         return
+#     print(list[indx])
+#     print_list(list,indx+1)
 
-fruit=["mango","banana","apple","orange"]
+# fruit=["mango","banana","apple","orange"]
 
-print_list(fruit)    
+#print_list(fruit)   
+ 
+# f=open("demo.txt","r")
+# for i in f:
+
+#  print(i, end="")
+# f.close()
+f=open("demo.txt","r")
+line1=f.readline()
+print(line1)
+line2=f.readline()
+print(line2)
+line3=f.readline()
+print(line3)
